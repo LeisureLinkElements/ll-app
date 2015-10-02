@@ -1,0 +1,47 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../iron-flex-layout/classes/iron-flex-layout.html">
+
+<!--
+An element providing a solution to no problem in particular.
+
+Example:
+
+    <ll-top-navbar></ll-top-navbar>
+
+@group Seed Elements
+@element ll-app
+@demo demo/index.html
+@hero hero.svg
+-->
+<dom-module id="ll-top-navbar">
+  <style is="custom-style">
+    :host {
+      @apply(--layout-horizontal);
+      background-color: #0069aa;
+      display: block;
+      padding: 15px;
+    }
+  </style>
+  <template>
+    <img src="images/logo_leisurelink.png">
+    <div class="flex"></div>
+    <div>Account Info</div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'll-top-navbar',
+
+    properties: {
+      isBusy: Boolean
+
+    },
+
+
+    ready: function () {
+
+    }
+  });
+</script>

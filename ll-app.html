@@ -8,6 +8,8 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="ll-top-navbar.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
 
 <!--
 An element providing a solution to no problem in particular.
@@ -29,7 +31,7 @@ Example:
         display: block;
         box-sizing: border-box;
       }
-  
+
       .author img {
         display: block;
         float: left;
@@ -38,13 +40,7 @@ Example:
         max-width: 100px;
       }
     </style>
-    <h1>&lt;ll-app&gt;</h1>
-    <content></content>
-    <p class="author">
-      <img src="{{author.image}}">
-      Cheers,<br/>
-      <span class="name">{{author.name}}</span>
-    </p>
+    <ll-top-navbar id="top-navbar"></ll-top-navbar>
   </template>
 
 </dom-module>

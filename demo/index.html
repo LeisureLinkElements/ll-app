@@ -14,35 +14,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <title>ll-app Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="import" href="../ll-app.html">
   </head>
   <body unresolved>
 
-    <p>An example of <code>&lt;ll-app&gt;</code>:</p>
 
-    <p>Make words! <button id="saybtn">Say Something</button></p>
-    <p>Make lasers! <button id="laserbtn">Fire lasers</button></p>
-
-    <ll-app author='{"name": "Lord Meowser", "image": "http://placekitten.com/g/200/300"}' fancy>
-      <h2>Hello ll-app</h2>
-    </ll-app>
-
-    <script>
-      var seedElement = document.querySelector('ll-app');
-      
-      document.querySelector('#saybtn').addEventListener('click', function() {
-        alert(seedElement.sayHello('Hallo!'));
-      });
-      
-      document.querySelector('#laserbtn').addEventListener('click', function() {
-        seedElement.fireLasers();
-      });
-      
-      document.addEventListener("ll-app-lasers", function(e) {
-        console.log(e.detail.sound);
-      });
-      
-    </script>
+    <ll-app></ll-app>
 
   </body>
 </html>
